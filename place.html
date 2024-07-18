@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+  
+    </script>
+    <link rel="stylesheet" href="login1.css">
+    <title>E-learning</title>
+    <script>//checking
+        function check(){
+            var storedName = localStorage.getItem('name');
+            var storedPw = localStorage.getItem('pw');
+        
+            var userName = document.getElementById('userName');
+            var userPw = document.getElementById('userPw');
+          
+        
+            if(userName.value == storedName && userPw.value == storedPw){
+                alert('order success.');
+            }else{
+                alert('Error on order');
+                
+            }
+        }</script>
+</head>
+<style>
+    table,td {
+      border:1px solid black;
+      margin: 25px;
+    }
+</style>
+<body ng-app="">
+    <center>
+        <div >
+            <form action="home.html">
+            <div class="card" >
+                <a class="singup">Book your seat</a>
+                <h2>Rs.<script>
+                  document.write(localStorage.getItem('totalPrice'));
+              </script></h2>
+                <div class="inputBox">
+                    <input type="text" required="required" id="userName">
+                    <span class="user">username</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" required="required"  ng-model="name">
+                    <span>name</span>
+                </div>
+                <div class="inputBox1">
+                    <input type="email" required="required" ng-model="mail">
+                    <span class="user">Email</span>
+                </div>
+
+
+                <div class="inputBox">
+                    <input type="number" required="required" ng-model="no">
+                    <span>Mobile no.</span>
+                </div>
+   
+                <div class="inputBox">
+                    <input type="text" required="required" ng-model="add" >
+                    <span>Address</span>
+                </div>
+                <div class="inputBox">
+                    Payment method:<select >
+                        
+                        <option >COD</option>
+                        <option >Net banking</option>
+             
+             
+             </select><br/></br></div>
+                <button class="enter" onclick="check()">Buy it!</button>
+            </form>
+ </div>
+
+
+ <div >
+    <div class="card" >
+        <u><a class="singup">Your Bill</a></u>
+        <table style="width: 80%;">
+            <tr><td rowspan="2">Your Name:  {{name}}</td></tr><br>
+            <tr><td> Youe No.:   {{no}}</td></tr><br>
+                <tr><td rowspan="2">Your Address: {{add}}</td></tr><br>
+                    <tr><td>Ammount: Rs.<script>
+            document.write(localStorage.getItem('totalPrice'));
+        </script></td></tr></table>
+
+
+</center>
+
+
+</body>
+</html>
+

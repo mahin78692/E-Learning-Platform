@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    
+    <title>E-learning</title>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script>
+        function deleteitem()
+        {
+        localStorage.clear();
+        }
+        
+
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="containter">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="home.html">
+                        <img src="logo.png" width="100px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="courses.html">Course</a></li>
+                        <li><a href="signin.html">Sign in</a></li>
+                        <li><a href="signup.html">Sign up</a></li>
+                        <li><a href="#" onclick="deleteitem()">Signout</a></li>
+                        <li><i class="fa fa-user" style="font-size:24px"></i></li>
+                        <li><script>
+                             
+                            if(localStorage.getItem('name')==localStorage.getItem('userName') && localStorage.getItem('pw')==localStorage.getItem('userPw')){
+    
+                                document.write(localStorage.getItem('name'));
+                            }
+                           
+                             </script>
+                         </li>
+                    </ul>
+                </nav>
+
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Learn with fun <br>on any schedule</h1>
+                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. A ipsum hic alias temporibus excepturi .
+                    </p>
+                    <a href="courses.html" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="image1.png" width="610px" height="515px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--  -->
+
+    <div class="categories">
+        <div class=".small-container">
+            <div class="row">
+                <div class="col-3"><img
+                        src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210202223017/Competitive-Programming-%E2%80%93-A-Complete-Guide.png" style="height: 250px; width:400px">
+                </div>
+                <div class="col-3"><img
+                        src="https://cdn.pixabay.com/photo/2018/05/19/00/53/online-education-3412473__340.jpg" style="height: 280px; width:460px"> </div>
+                <div class="col-3"><img src="https://backend.huskyjam.com/media/blog/post/e-learning_1.jpg" style="height: 250px; width:400px"> </div>
+                </div>
+            </div>
+        </div>
+
+<!--  -->
+        <div class=".small-container" >
+            <h2 class="title">Online Courses</h2>
+            <div class="row">
+                <div class="col-4" data-aos="flip-left">
+                    <a href="">
+                        <img src=" DP.png" style="height: 200px; width:340px">
+                        <h4>Dynamic programming</h4>
+                    </a>
+                    <p>Rs.650</p>
+                </div>
+                <div class="col-4">
+                    <a href="">
+                        <img src=" DS.jpg" style="height: 200px; width:340px"></a>
+                    <h4>Data science</h4>
+                    <p>Rs.700</p>
+                </div>
+                <div class="col-4">
+                    <a href="">
+                        <img src=" ML.jpg" style="height: 200px; width:340px"></a>
+                    <h4>Machine Learning</h4>
+                    <p>Rs.600</p>
+                </div>
+                <div class="col-4">
+                    <a href="">
+                        <img src=" DSA.jpg" style="height: 200px; width:340px"    ></a>
+                    <h4>Data Structure and Algorithem</h4>
+                    <p>Rs.850</p>
+                </div>
+            </div>
+
+            <!-- -------------faculty------------ -->
+
+            <h2 class="title">Our Faculty</h2>
+            <div class="row">
+                <div class="col-4">
+                    <a href="">
+                        <img
+                            src="https://www.resumeviking.com/wp-content/uploads/2020/05/teacher-profile-photo.jpg"></a>
+                    <h4> Olivia Sen </h4>
+                    <p>specialist in DP</p>
+                </div>
+                <div class="col-4">
+                    <a href="">
+                        <img
+                            src="https://www.pngitem.com/pimgs/m/404-4042710_circle-profile-picture-png-transparent-png.png"></a>
+                    <h4>Vim Diesel</h4>
+
+                    <p>Expert in DSA</p>
+                </div>
+                <div class="col-4">
+                    <a href="">
+                        <img src="https://www.mockofun.com/wp-content/uploads/2019/12/circle-profile-pic.jpg"></a>
+                    <h4>Jasmine Garcia</h4>
+                    <p>Expert in Data science</p>
+                </div>
+                <div class="col-4">
+                    <a href="">
+                        <img
+                            src="https://www.kindpng.com/picc/m/557-5575215_2020-profile-circle-hd-png-download.png"></a>
+                    <h4>Ethem Sullivan</h4>
+                    <p>Master in ML</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ------------------feed----------------- -->
+        <h2 class="title">Feedback</h2>
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ut, animi earum, culpa
+                            nesciunt
+                            deserunt sit tempora voluptatem porro consequuntur reprehenderit consequatur ipsum aliquid
+                            ad,
+                            quaerat obcaecati incidunt qui totam?</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <img src="user-1.png">
+                        <h3>Gal Gadot</h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ut, animi earum, culpa
+                            nesciunt
+                            deserunt sit tempora voluptatem porro consequuntur reprehenderit consequatur ipsum aliquid
+                            ad,
+                            quaerat obcaecati incidunt qui totam?</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                        <img src=" user-2.png">
+                        <h3>Tom Cruise </h3>
+                    </div>
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ut, animi earum, culpa
+                            nesciunt
+                            deserunt sit tempora voluptatem porro consequuntur reprehenderit consequatur ipsum aliquid
+                            ad,
+                            quaerat obcaecati incidunt qui totam?</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                        <img src=" user-3.png">
+                        <h3>Selena Gomez</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -------------------brands-------------------- -->
+        <h2 class="title">Our Sponsor</h2>
+        <div class="brands">
+            <!-- <div class="small-container"></div> -->
+            <div class="row">
+                <div class="col-5">
+                    <a href="https://www.mi.com/in">
+                        <img src=" logo-mi.png"></a>
+                </div>
+                <div class="col-5">
+                    <a href="https://byjus.com/">
+                        <img src="https://logos-world.net/wp-content/uploads/2021/08/Byjus-Logo-700x394.png"></a>
+                </div>
+                <div class="col-5">
+                    <a href="https://www.coca-cola.com/in/en">
+                        <img src=" logo-coca-cola.png"></a>
+                </div>
+                <div class="col-5">
+                    <a href="https://www.paypal.com/in/home">
+                        <img src=" logo-paypal.png"></a>
+                </div>
+                <div class="col-5">
+                    <a href="https://www.raymond.in/">
+                        <img src=" logo-raymond.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------------------footer------------------- -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios</p>
+                    <div class="app-logo">
+                        <a href="https://play.google.com/store/games?pli=1">
+                            <img src=" play-store.png"></a>
+                        <a href="https://www.apple.com/in/app-store/">
+                            <img src=" app-store.png"></a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <center>
+                        <a href="home.html">
+                            <img src="logo.png" width="100px"></a>
+                    </center>
+                         
+                </div>
+                <div class=" footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupens</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class=" footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="">Instagram
+                                <i class='fa fa-instagram' style='color: white'></i></a></li>
+                        <li><a href="">Twitter
+                                <i class='fa fa-twitter' style='color:#0097f5'></i>
+                            </a></li>
+                        <li><a href="">Linkedin
+                                <i class='fa fa-linkedin' style='color: white'></i></a></li>
+                        <li><a href="">Codeforces</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            
+        </div>
+    </div>
+
+</body>
+
+</html>
